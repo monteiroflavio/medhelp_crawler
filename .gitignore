@@ -1,0 +1,5 @@
+bin/*
+lib/*
+preeclampsia/*
+__pycache__/*
+share/*
