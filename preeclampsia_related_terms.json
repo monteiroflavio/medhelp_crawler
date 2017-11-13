@@ -1,0 +1,32 @@
+{
+   "preeclampsia" : {
+		"1" : [
+			"eph"
+			, "pet"
+			, "pe"
+			, "preeclampsia"
+			, "pre-eclampsia"
+		]
+		, "2" : [
+			["pre", "eclampsia"]
+			, ["mild", "pre-eclampsia"]
+			, ["severe", "pre-eclampsia"]
+			, ["mild", "preeclampsia"]
+			, ["severe", "preeclampsia"]
+		]
+		, "3" : [
+			["pre", "eclamptic", "toxaemia"]
+			, ["proteinuric", "hypertension", "pregnancy"]
+			, ["mild", "pre", "eclampsia"]
+			, ["severe", "pre", "eclampsia"]
+			, ["pregnancy", "induced", "hypertension"]
+		]
+		, "4" : [
+			["oedema","proteinuria", "hypertension", "pregnancy"]
+			, ["edema", "proteinuria", "hypertension", "pregnancy"]
+		]
+		, "8" : [
+			["hemolysis", "elevated", "liver", "enzymes", "low", "platelet", "count", "syndrome"]
+		]
+	}
+}
