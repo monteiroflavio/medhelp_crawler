@@ -93,7 +93,7 @@ class MedHelpCrawler:
                         answers.append(Answer(answer.find('a')['id']
                             , answer.find('a')['href']
                             , self.concatenate_string_array(self.convert_a_tags(answer.find('div', {'class', 'post_message'})).contents)
-                            , answer.find('div', {'class', 'subj_info os_14 '}).find('span')['data-timestamp']
+                            , answer.find('time', {'class', 'mh_timestamp'})['data-timestamp']
                             , int(answer.find('span', {'id' : 'user_rating_count_Post_'+post_id}).contents[0])
                             , post_id))
                         page+=1
@@ -112,7 +112,7 @@ class MedHelpCrawler:
     	        , souped_page.find('div', {'class', 'subj_user os_12'}).find('a')['href']
     	        , self.concatenate_string_array(self.convert_a_tags(souped_page.find('div', {'class', 'post_message'})).contents)
 	        , answers
-	        , souped_page.find('div', {'class', 'subj_info os_14 '}).find('span')['data-timestamp']
+	        , souped_page.find('time', {'class', 'mh_timestamp'})['data-timestamp']
                 , souped_page.find('div', {'class', 'post_message'})['data-post_id'])
     def extract_max_answers_pages(self, question_url):
         try:

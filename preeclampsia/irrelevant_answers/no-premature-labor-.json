@@ -6,7 +6,7 @@
             "timestamp": "1395783134",
             "user_id": "user_7742540",
             "user_link": "/personal_pages/user/7742540",
-            "votes": "0"
+            "votes": 0
         },
         {
             "answer": "How far are you?",
@@ -14,7 +14,7 @@
             "timestamp": "1395783290",
             "user_id": "user_7527173",
             "user_link": "/personal_pages/user/7527173",
-            "votes": "0"
+            "votes": 0
         }
     ],
     "post_id": "10139135",

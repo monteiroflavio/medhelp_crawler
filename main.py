@@ -53,13 +53,13 @@ def save_question_page(question_url):
         raise ConnectionError('unable to download requested page')
     else:
         index = ''
-        if os.path.isfile(question_url.split('/')[3]+'.json'):
+        if os.path.isfile(question_url.split('/')[3].lower()+'.json'):
             while os.path.isfile(question_url.split('/')[3]+str(index)+'.json'):
                 if index is '':
                     index = 1
                 else:
                     index+=1
-        f = open(question_url.split('/')[3]+str(index)+'.json', 'w')
+        f = open(question_url.split('/')[3].lower()+str(index)+'.json', 'w')
         f.write(jsonify(question))
         f.close()
         
@@ -169,8 +169,9 @@ def remove_single_answer_questions():
 #print('latest :'+time.ctime(date_set['latest_timestamp']))
 #print('newest :'+time.ctime(date_set['newest_timestamp']))
 
-#generate_histogram(get_dates_list())
 remove_single_answer_questions()
+#remove_not_related_questions()
+#remove_irrelevant_answers()
 
 #for timestamp in get_dates_list():
 #    print(time.ctime(timestamp))

@@ -1,9 +1,8 @@
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.util import ngrams
-from sklearn.metrics.pairwise import cosine_similarity, linear_kernel, polynomial_kernel, sigmoid_kernel, rbf_kernel, laplacian_kernel, chi2_kernel
 from math import log
-import numpy
+from distance_measures import exec_similarity
 import nltk.data
 import json
 import pprint
@@ -97,28 +96,6 @@ def check_text_terms(text, terms):
             return True
     return False
 
-#moves .json files not containing preeclampsia-related terms on their title and question
-def remove_not_related_questions():
-    terms = json.load(open('preeclampsia_related_terms.json', 'r'))['preeclampsia']
-    if not os.path.exists(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'not_related_question')):
-        os.makedirs(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'not_related_question'))
-    for filename in os.listdir('preeclampsia'):
-        if not os.path.isdir(os.path.join('preeclampsia', filename)):
-            file = json.load(open(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), 'r'))
-            if not (check_text_terms(file['question'], terms) or check_text_terms(file['title'], terms)):
-                os.rename(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), os.path.join(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'not_related_question'), filename))
-
-#moves .json files not whose all answers received no vote
-def remove_irrelevant_answers():
-    terms = json.load(open('preeclampsia_related_terms.json', 'r'))['preeclampsia']
-    if not os.path.exists(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'irrelevant_answers')):
-        os.makedirs(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'irrelevant_answers'))
-    for filename in os.listdir('preeclampsia'):
-        if not os.path.isdir(os.path.join('preeclampsia', filename)):
-            file = json.load(open(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), 'r'))
-            if sum(int(answer['votes']) for answer in file['answers']) == 0:
-                os.rename(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), os.path.join(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'irrelevant_answers'), filename))
-
 #counts the total files in a folder
 def get_total_documents(directory):
     if not os.path.exists(os.path.join(os.getcwd(), directory)):
@@ -145,6 +122,28 @@ def get_document_frequency(term, directory):
                 term_frequency += count_term(term, ngrams(word_tokenizer(file['question']+' '+file['title']), len(term)))
                 term_frequency += sum(count_term(term, ngrams(word_tokenizer(answer['answer']), len(term))) for answer in file['answers'])
     return term_frequency
+
+#moves .json files not containing preeclampsia-related terms on their title and question
+def remove_not_related_questions():
+    terms = json.load(open('preeclampsia_related_terms.json', 'r'))['preeclampsia']
+    if not os.path.exists(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'not_related_question')):
+        os.makedirs(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'not_related_question'))
+    for filename in os.listdir('preeclampsia'):
+        if not os.path.isdir(os.path.join('preeclampsia', filename)):
+            file = json.load(open(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), 'r'))
+            if not (check_text_terms(file['question'], terms) or check_text_terms(file['title'], terms)):
+                os.rename(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), os.path.join(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'not_related_question'), filename))
+
+#moves .json files not whose all answers received no vote
+def remove_irrelevant_answers():
+    terms = json.load(open('preeclampsia_related_terms.json', 'r'))['preeclampsia']
+    if not os.path.exists(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'irrelevant_answers')):
+        os.makedirs(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'irrelevant_answers'))
+    for filename in os.listdir('preeclampsia'):
+        if not os.path.isdir(os.path.join('preeclampsia', filename)):
+            file = json.load(open(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), 'r'))
+            if sum(int(answer['votes']) for answer in file['answers']) == 0:
+                os.rename(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), os.path.join(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'irrelevant_answers'), filename))
 
 #calculates inverse document frequency for a given term
 def idf(total_documents, term_frequency):
@@ -203,64 +202,101 @@ def get_tf_idf_matrix(file, terms):
     [answer.update({'tf_idf' : tf_idf_for_document(answer['answer'], terms)}) for answer in file['answers']]
     return file
 
-def exec_similarity(matrix, algorithm):
-    return {
-        'cosine_similarity' : lambda matrix: [answer.update({'cosine_similarity':numpy.asscalar(cosine_similarity(ndarray_dict(matrix['tf_idf']),ndarray_dict(answer['tf_idf'])))}) for answer in matrix['answers']],
-        'linear_kernel' : lambda matrix: [answer.update({'linear_kernel':numpy.asscalar(linear_kernel(ndarray_dict(matrix['tf_idf']),ndarray_dict(answer['tf_idf'])))}) for answer in matrix['answers']],
-        'polynomial_kernel' : lambda matrix: [answer.update({'polynomial_kernel':numpy.asscalar(polynomial_kernel(ndarray_dict(matrix['tf_idf']), ndarray_dict(answer['tf_idf'])))}) for answer in matrix['answers']],
-        'sigmoid_kernel' : lambda matrix: [answer.update({'sigmoid_kernel':numpy.asscalar(sigmoid_kernel(ndarray_dict(matrix['tf_idf']), ndarray_dict(answer['tf_idf'])))}) for answer in matrix['answers']],
-        'rbf_kernel' : lambda matrix: [answer.update({'rbf_kernel':numpy.asscalar(rbf_kernel(ndarray_dict(matrix['tf_idf']), ndarray_dict(answer['tf_idf'])))}) for answer in matrix['answers']],
-        'laplacian_kernel' : lambda matrix: [answer.update({'laplacian_kernel':numpy.asscalar(laplacian_kernel(ndarray_dict(matrix['tf_idf']), ndarray_dict(answer['tf_idf'])))}) for answer in matrix['answers']],
-        'chi2_kernel' : lambda matrix: [answer.update({'chi2_kernel':numpy.asscalar(chi2_kernel(ndarray_dict(matrix['tf_idf']), ndarray_dict(answer['tf_idf'])))}) for answer in matrix['answers']]
-    }[algorithm](matrix)
-
-def ndarray_dict(dictionary):
-    return numpy.array(list(dictionary.values())).reshape(1,-1)
-
-def rank_metric(dict_list, metric):
-    sorted_list = sorted([value[metric] for value in dict_list], reverse=True)
-    ranking = []
+def rank_algorithm(dict_list, algorithm):
+    if algorithm not in dict_list[0]:
+        return {}
+    sorted_list = sorted([value[algorithm] for value in dict_list], reverse=True)
     for answer in dict_list:
         for rank in sorted_list:
-            if answer[metric] == rank:
-                ranking.append({'answer':answer['answer'],'rank':sorted_list.index(rank)+1})
-    return ranking
+            if answer[algorithm] == rank:
+                answer.update({'rank_'+algorithm:sorted_list.index(rank)+1})
+    return dict_list
 
 def rank_votes(dict_list):
-    sorted_list = sorted([int(answer['votes']) for answer in dict_list])
-    ranking = []
+    sorted_list = sorted([answer['votes'] for answer in dict_list])
     for answer in dict_list:
         for rank in sorted_list:
-            if int(answer['votes']) == rank:
-                ranking.append({'answer':answer['answer'], 'rank':sorted_list.index(rank)+1})
+            if answer['votes'] == rank:
+                answer.update({'rank_votes':sorted_list.index(rank)+1})
+    return dict_list
+
+def compare_to_votes(answers, algorithm):
+    sorted_votes = sorted([value['rank_votes'] for value in answers])
+    sorted_algorithm = sorted([value['rank_'+algorithm] for value in answers])
+    ranking = {algorithm:[], 'votes':[]}
+    checked = []
+    for answer in answers:
+        for rank in sorted_votes:
+            if answer['rank_votes'] == rank and answer not in checked:
+                ranking['votes'].append({'answer':answer['answer'],'id':answer['post_id'],'rank':answer['rank_votes']})
+                checked.append(answer)
+    checked = []
+    for answer in answers:
+        for rank in sorted_algorithm:
+            if answer['rank_'+algorithm] == rank and answer not in checked:
+                ranking[algorithm].append({'answer':answer['answer'],'id':answer['post_id'],'rank':answer['rank_'+algorithm]})
+                checked.append(answer)
     return ranking
 
-def compare_results(dict_list, metric):
-    return {
-        'userVotes' : rank_votes(dict_list),
-        metric : rank_metric(dict_list, metric)
-    }
-    
-def main():
-    file = json.load(open(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), '1st-pregnancy-severe-pre-eclampsia-what-are-my-odds-for-the-second.json'), 'r'))
+def compare_algorithms(answers, algorithms):
+    ranking = {}
+    [ranking.update({algorithm : []}) for algorithm in algorithms]
+    for algorithm in algorithms:
+        if 'rank_'+algorithm not in answers[0].keys():
+                continue
+        sorted_algorithm = sorted([value['rank_'+algorithm] for value in answers])
+        checked = []
+        for answer in answers:
+            for rank in sorted_algorithm:
+                if answer['rank_'+algorithm] == rank and answer not in checked:
+                    ranking[algorithm].append({'answer':answer['answer'],'id':answer['post_id'],'rank':answer['rank_'+algorithm]})
+                    checked.append(answer)
+    return ranking
+
+def get_algorithms():
+    return ['braycurtis'
+                  , 'canberra'
+                  , 'chebyshev'
+                  , 'cityblock'
+                  , 'correlation'
+                  , 'cosine'
+                  , 'euclidean'
+                  #, 'mahalanobis'
+                  #, 'minkowski'
+                  #, 'seuclidean'
+                  , 'sqeuclidean'
+                  #, 'wminkowski'
+                  , 'dice'
+                  , 'hamming'
+                  , 'jaccard'
+                  , 'kulsinski'
+                  , 'rogerstanimoto'
+                  , 'russellrao'
+                  , 'sokalmichener'
+                  , 'sokalsneath'
+                  , 'yule'
+    ]
+
+def rank_answers(file, algorithms):
     terms = json.load(open('preeclampsia_related_terms.json', 'r'))['preeclampsia']
+    tf_idf_file = get_tf_idf_matrix(file, terms)
+    for algorithm in algorithms:
+        exec_similarity(tf_idf_file, algorithm)
+        rank_algorithm(tf_idf_file['answers'], algorithm)
+    rank_votes(tf_idf_file['answers'])
+    return tf_idf_file
 
-    algorithms = ['cosine_similarity', 'linear_kernel', 'polynomial_kernel', 'sigmoid_kernel', 'rbf_kernel', 'laplacian_kernel', 'chi2_kernel']
-    #tf_idf_file = get_tf_idf_matrix(file, terms)
-    #tf_idf_file['answers'] = rank_votes(tf_idf_file['answers'])
-    #for algorithm in algorithms:
-        #exec_similarity(tf_idf_file, algorithm)
-        #pprint.pprint(compare_results(tf_idf_file['answers'], algorithm), indent=4)
-        
-    #total_documents = get_total_documents('preeclampsia')
-    #for gram_length in terms:
-    #    [save_idf('preeclampsia', term, total_documents) for term in terms[gram_length]]
+def get_algorithms_comparison(file, algorithms):
+    return compare_algorithms(rank_answers(file, algorithms)["answers"], algorithms)
+
+def get_votes_comparison(file, algorithms, algorithm):
+    return compare_to_votes(rank_answers(file, algorithms)["answers"], algorithm)
+
+def main():
+    file = json.load(open(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'uss-normal-but-everything-points-to-kidney-problem---what-other-tests-do-i-need.json'), 'r'))
     
-    #print(get_text_frequencies(file['title']+' '+file['question'], terms))
-
-    #remove_not_related_questions()
-    remove_irrelevant_answers()
+    #pprint.pprint(compare_to_votes(tf_idf_file['answers'], 'sokalsneath'))
+    pprint.pprint(compare_algorithms(tf_idf_file['answers'], algorithms))
+    #pprint.pprint(tf_idf_file)
     
-    #print(check_text_terms(question, terms))
-
 if __name__ == '__main__' : main()
