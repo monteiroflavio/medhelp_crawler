@@ -78,20 +78,20 @@ def jsonify(jsonable_obj):
 def sanitize_name(str):
     return ''.join([c for c in str if c.isalpha() or c.isdigit() or c is ' ' or c is '.']).lower().replace(' ', '_')
 
-def save_preeclampsia_links():
-    f = open('preeclampsia_links.txt', 'w')
+def save_links(search_string):
+    f = open('links.txt', 'w')
     try:
-        list = medhelp_crawler.extract_search_questions('preeclampsia')
+        list = medhelp_crawler.extract_search_questions(search_string)
     except ConnectionError:
-        raise ConnectionError('error on gathering links for term preeclampsia')
+        raise ConnectionError('error on gathering links for term '+search_string)
     else:
         for link in list:
             f.write(link+'\n')
     finally:
         f.close()
 
-def save_preeclampsia_pages():
-    f = open('preeclampsia_links.txt', 'r')
+def save_pages():
+    f = open('links.txt', 'r')
     links = f.readlines()
     for link in links:
         try:
@@ -102,16 +102,16 @@ def save_preeclampsia_pages():
             raise ConnectionError('an error occurred while downloading page '+ link.strip())
         finally:
             f.close()
-            f = open('preeclampsia_links.txt','w')
+            f = open('links.txt','w')
             for link in links:
                 f.write(link)
             f.close()
 
-def check_latest_question():
+def check_pages_time_range(directory):
     latest_timestamp = time.time()
     newest_timestamp = 0
-    for filename in os.listdir('preeclampsia'):
-        question = json.load(open(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), 'r'))
+    for filename in os.listdir(directory):
+        question = json.load(open(os.path.join(os.path.join(os.getcwd(), directory), filename), 'r'))
         if int(question['timestamp']) < latest_timestamp:
             latest_timestamp = int(question['timestamp'])
         if int(question['timestamp']) > newest_timestamp:
@@ -123,25 +123,25 @@ def check_latest_question():
                 newest_timestamp = int(answer['timestamp'])
     return {'latest_timestamp' : latest_timestamp, 'newest_timestamp' : newest_timestamp}
 
-def get_dates_list():
+def get_dates_list(directory):
     dates = []
-    for filename in os.listdir('preeclampsia'):
-        question = json.load(open(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), 'r'))
+    for filename in os.listdir(directory):
+        question = json.load(open(os.path.join(os.path.join(os.getcwd(), directory), filename), 'r'))
         dates.append(int(question['timestamp']))
         for answer in question['answers']:
             dates.append(int(answer['timestamp']))
     return sorted(dates)
 
-def download_preeclampsia_links():
+def download_links(search_string):
     try:
-        save_preeclampsia_links()
+        save_links(search_string)
     except ConnectionError:
         print('an error occurred while collection pages')
 
-def download_preeclampsia_pages():
-    while os.stat('preeclampsia_links.txt').st_size > 0:
+def download_pages():
+    while os.stat('links.txt').st_size > 0:
         try:
-            save_preeclampsia_pages()
+            save_pages()
         except ConnectionError:
             print('an error occurred. restarting for remaining links')
 
@@ -162,14 +162,14 @@ def remove_single_answer_questions():
 #save_question_page('/posts/Diabetes---Type-1/Do-you-have-questions-about-diabetes--/show/2987819')
 #save_question_pages('/forums/Diabetes---Gestational/show/1950')
 
-#download_preeclampsia_links()
+download_links('diabetes')
 #download_preeclampsia_pages()
 
 #date_set = check_latest_question()
 #print('latest :'+time.ctime(date_set['latest_timestamp']))
 #print('newest :'+time.ctime(date_set['newest_timestamp']))
 
-remove_single_answer_questions()
+#remove_single_answer_questions()
 #remove_not_related_questions()
 #remove_irrelevant_answers()
 
