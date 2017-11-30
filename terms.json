@@ -1,0 +1,190 @@
+{
+	"synonyms" : {
+		"1" : [
+			"dm",
+			"t1"
+		], "2" : [
+			["diabetes", "mellitus"]
+			, ["dm", "t1"]
+			, ["t1", "dm"]
+			, ["diabetes", "t1"]
+			, ["t1", "diabetes"]
+			, ["diabetes", "1"]
+			, ["diabetes", "i"]
+			, ["diabetes", "type-1"]
+			, ["type-1", "diabetes"]
+			, ["diabetes", "type-i"]
+			, ["type-1", "dm"]
+			, ["dm", "type-i"]
+			, ["type-i", "diabetes"]
+			, ["dm", "type-i"]
+			, ["type-i", "dm"]
+		], "3" : [
+			["diabetes", "mellitus", "1"]
+			, ["dm", "type", "1"]
+			, ["type", "1", "dm"]
+			, ["dm", "type", "i"]
+			, ["type", "i", "dm"]
+			, ["diabetes", "mellitus", "t1"]
+			, ["t1", "diabetes", "mellitus"]
+			, ["diabetes", "mellitus", "t-1"]
+			, ["t-1", "diabetes", "mellitus"]
+			, ["diabetes", "mellitus", "ti"]
+			, ["ti", "diabetes", "mellitus"]
+			, ["diabetes", "mellitus", "t-i"]
+			, ["t-i", "diabetes", "mellitus"]
+			, ["diabetes", "mellitus", "type-1"]
+			, ["type-1", "diabetes", "mellitus"]
+			, ["diabetes", "mellitus", "type-i"]
+			, ["type-i", "diabetes", "mellitus"]
+			, ["diabetes", "mellitus", "i"]
+			, ["diabetes", "mellitus", "i"]
+			, ["diabetes", "type", "1"]
+			, ["type", "1", "diabetes"]
+			, ["diabetes", "type", "i"]
+			, ["type", "i", "diabetes"]
+			, ["type", "1", "diabetic"]
+			, ["type", "i", "diabetic"]
+		], "4" : [
+			["diabetes","mellitus", "type", "1"]
+			, ["type", "1", "diabetes","mellitus"]
+			, ["diabetes","mellitus", "type", "i"]
+			, ["type", "i", "diabetes","mellitus"]
+		]
+	}, "thrist": {
+		"1" : [
+			"polydipsia",
+			"thirstiness",
+			"thirsty"
+		], "2" : [
+			["excessive", "thirst"],
+			["increased", "thirst"],
+			["uncommon", "thirst"]
+		]
+	}, "tiredness" : {
+		"1" : [
+			"tiredness",
+			"numbness",
+		    "fatigue",
+		    "dizziness",
+			"tired",
+			"numb",
+			"dizzy"
+		]
+	}, "vomiting" : {
+		"1" : [
+			"nausea",
+			"reflux",
+			"vomiting"
+		]
+	}, "stomachache" : {
+		"1" : [
+		    "stomachache"
+		], "2" : [
+			["pain", "stomach"]
+		]
+	}, "urination" : {
+		"1" : [
+			"polyuria"
+		], "2" : [
+			["frequent", "urination"],
+			["uncommon", "urination"],
+			["excessive", "urination"],
+			["peeing", "lot"],
+			["peeing", "too", "much"]
+		]
+	}, "vision" : {
+		"2" : [
+			["blurry", "vision"],
+			["dry", "eye"],
+			["dry", "eyes"]
+		]
+	}, "appetite" : {
+		"1" : [
+			"polyphagia"
+		], "2" : [
+			["loss", "appetite"],
+			["loss", "hunger"],
+			["reduce", "appetite"],
+			["reduce", "hunger"],
+			["increase", "appetite"],
+			["increase", "hunger"]
+		]
+	}, "weight" : {
+		"2" : [
+			["weight", "loss"],
+			["muscular", "loss"]
+		]
+	}, "genital_itching" : {
+		"2" : [
+			["penis", "itching"],
+	        ["vagina", "itching"],
+	        ["genital", "itching"],
+			["itchy", "penis"],
+			["itchy", "vagina"]
+		]
+	}, "mood" : {
+		"1" : [
+			"irritability"
+		], "2" : [
+			["unexpected", "cramping"],
+			["mood", "changes"]
+		]
+	}, "diagnosis" : {
+		"1" : [
+			"fpg",
+			"hba1c",
+			"a1c",
+			"gad",
+			"screening",
+			"fasting",
+			"test",
+			"result"
+		], "2" : [
+			["fpg", "test"],
+			["hba1c", "test"],
+			["a1c", "test"],
+			["hemoglobin", "test"],
+			["blood", "test"],
+			["blood", "result"],
+			["c-peptide", "test"]
+		], "3" : [
+			["blood", "glucose", "test"],
+			["hemoglobin", "a1c", "test"],
+			["urine", "glusoce", "test"],
+			["urine", "ketone", "test"],
+			["gad", "autoantibodies", "test"]
+		], "4" : [
+			["oral", "glucose", "tolerance", "test"]
+		]
+	}, "conditions" : {
+		"2" : [
+			["elevated", "cholesterol"],
+			["high", "cholesterol"],
+			["fatty", "liver"],
+			["cystic", "fibrosis"]
+		], "3" : [
+			["high", "blood", "glucose"],
+			["coronary", "artery", "disease"],
+			["prior", "gestational", "diabetes"]
+		]
+	}, "ethnicity" : {
+		"1" : [
+			"african",
+			"latino",
+			"hispanic",
+			"ethnicity"		
+		], "2" : [
+			["american", "indian"],
+			["alaska", "native"]
+		]
+	}, "family_history" : {
+		"2" : [
+			["family", "history"],
+			["parent", "diabetes"],
+			["brother", "diabetes"],
+			["sister", "diabetes"],
+			["sibling", "diabetes"]
+		]
+	}
+}

@@ -1,0 +1,26 @@
+{
+    "rogerstanimoto": [
+        {
+            "answer": "Herbalife cannot cure your diabetes.\u00a0\u00a0We strongly recommend seeking the advice of a qualified physician.",
+            "id": "14145949",
+            "rank": 1
+        },
+        {
+            "answer": "Herbalife can be used as a supplement",
+            "id": "14155119",
+            "rank": 1
+        }
+    ],
+    "votes": [
+        {
+            "answer": "Herbalife cannot cure your diabetes.\u00a0\u00a0We strongly recommend seeking the advice of a qualified physician.",
+            "id": "14145949",
+            "rank": 2
+        },
+        {
+            "answer": "Herbalife can be used as a supplement",
+            "id": "14155119",
+            "rank": 1
+        }
+    ]
+}

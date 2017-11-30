@@ -1,0 +1,62 @@
+{
+    "answers": [
+        {
+            "answer": "I don't get your question or the statement \"and the system is less effective.\" Please be more specific. Telehealth encompasses a HUGE area using electronic means to convey a message, diagnosis, treatment, and from what I understand, in some rare cases robotic surgery. I use email to discuss health care with various physicians, to order labs, and to place Rx with my pharmacy. This is considered Telehealth.Do doctors have time to monitor and evaluate all their diabetes patients glucose levels? The dream is yes, the reality is no. It is up to the health care provider to determine and put into practice as to how much and what they make available to their patients. More important it is up to the patient to not only educate themselves on diabetes but also to apply the practice of diabetes self control and management then report irregularities to their doctor/s on a timely basis. HTH",
+            "post_id": "7684838",
+            "timestamp": "1329322993",
+            "votes": 0
+        },
+        {
+            "answer": "Hi,sorry if I was being unclear, by system being less effective. I am talking about his routine of managing his diabetes, which has become less effective since his stroke, i.e since the stroke he has been unable to manage his diabetes with his previous routine and I am wondering if telehealth might be a good system to help him manage his diabetes.The systems I have read about have a monitoring centre that will evaluate the results of multiple monitors if needed (for example blood pressure) and then alert a doctor if any results are abnormal or there is an alarming trend, as well as arranging precriptions.",
+            "post_id": "7687960",
+            "timestamp": "1329404743",
+            "votes": 0
+        },
+        {
+            "answer": "From what I am gathering you are looking for a tool/tracker which will alert your father's doctor automatically of his health abnormalities. The answer is yes there are but has a big no attached to it for several reasons;1) the doctor does not provide/accept such service2) the doctor does provide the service but at a co$t to the patient3) one has to purchase the same program/application as the doctor's which may co$t big $$. Dissimilarprograms/applications usually have compatibility issues. This includes compatibility of theOS [XP, Vista, WIN7], 32 vs 64 bit computers, and PC vs MAC OSxx.4) there is no assurance the doctors office monitors on a daily, weekly, or monthly basis.I suggest you check with your father's doctors office on what Telehealth services he/she provides/accepts. Good luck",
+            "post_id": "7688334",
+            "timestamp": "1329411944",
+            "votes": 0
+        },
+        {
+            "answer": "I reread your last post and I was somewhat off in my response. My question would be who is performing your father's glucose and blood pressure testing if he is unable to? Who then inputs the data so it can be uploaded to the \"monitoring centre\"? It does matter whether the doctor will accept this type of information from a third party. I know mine won't but every doctor is different and has different guidelines/policies.",
+            "post_id": "7689171",
+            "timestamp": "1329428983",
+            "votes": 0
+        },
+        {
+            "answer": "At the moment my dad does it himself, often with help from myself or sister if with him, or carers who visit him morning and evening. The problem comes with keeping his chart up to date and the many visits to the diabetic nurse at his local GP surgery, just for check ups. Since his stroke he is less able to cope with this kind of activity.In the UK the government wants to introduce systems like this one i found on Google.http://www.****.co.uk/Products-and-services/Telehealth-solutions/Individual-homes",
+            "post_id": "7690598",
+            "timestamp": "1329471872",
+            "votes": 0
+        },
+        {
+            "answer": "MH censored your link but I was able to decipher enough to find Tunstall Telecare & Telehealth. Its a type of service that was introduced in the states a dozen or so years ago and died on the wayside due to expenses incurred by the patient and doctor. [send me a PM and I can explain further] TTT offers an emergency medical call button which in your father's condition is good idea. ie a wrist strap with a button to push if an emergency arises and he is unable to get to the nearest telephone to call for help.As far as the telehealth service your father still is required to input data on a PC/MAC for it to be uploaded to Tunstall, the same as maintaining a personal \"chart\". If he has difficulty with a chart a PC/MAC would be a step up the difficulty ladder. Cannot the diabetic nurse come to him instead of him to the nurse? Some hospitals in the states offer this service. It still behooves you to discuss telehealth service with your fathers doctor as he/she may have one or is planning to have one in place. Good luck",
+            "post_id": "7691433",
+            "timestamp": "1329496925",
+            "votes": 0
+        },
+        {
+            "answer": "If you ever make it back to read this this, the US FDA just approved the iGlucose wireless device. It is compatible with the LifeScan OneTouch and Nipro Diagnostic True monitoring systems. Takes the glucose reading from these devices, transmits wireless directly to a monitoring system at a doctors office. http://iglucose.com/",
+            "post_id": "7701068",
+            "timestamp": "1329778266",
+            "votes": 0
+        },
+        {
+            "answer": "Hi thanks so much for your help and all the info. The myMedic system does not need input,the glucose meter and other peripherals send the information to the device. It seems that the UK government are pushing ahead with plans to role it out and I am currently discussing it with his GP and local health authority",
+            "post_id": "7702405",
+            "timestamp": "1329815593",
+            "votes": 0
+        },
+        {
+            "answer": "When and if you have everything in place please post back and let us know how everything goes. Especially curious as to how the device monitors and transmits wireless over a cell network [GSM, CDMA or iDEN, or combined].",
+            "post_id": "7703106",
+            "timestamp": "1329840289",
+            "votes": 0
+        }
+    ],
+    "post_id": "7684188",
+    "question": "My dad was diagnosed with type 2 diabetes 5 years ago and had an effective management system, but had a minor stroke a few months ago and the system is less effective. I have been reading a lot about telehealth in the press and that the trail has been with diabetes, does the system work? anybody got any experience.",
+    "timestamp": "1329304215",
+    "title": "Telehealth"
+}

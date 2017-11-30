@@ -1,0 +1,36 @@
+{
+    "rogerstanimoto": [
+        {
+            "answer": "It is unlikely that running the marathon would have caused any significant structural changes in your heart that would lead to rapid heart rates.\u00a0\u00a0It may be helpful to have your doctor put you on a heart monitor so that the actual rates can be measured - it will give you both a better idea of what may be going on!",
+            "id": "5088768",
+            "rank": 2
+        },
+        {
+            "answer": "Thanks for the reply.Should I be concerned about the lymphocytes count (it is 23; recommended is 25-41); everything else is normal (CBC/realine/EKG and other metabolic blood tests)",
+            "id": "5089314",
+            "rank": 1
+        },
+        {
+            "answer": "Also wanted to know if stress can contribute to reduced lymphocytes count ?Thanks",
+            "id": "5089340",
+            "rank": 2
+        }
+    ],
+    "votes": [
+        {
+            "answer": "It is unlikely that running the marathon would have caused any significant structural changes in your heart that would lead to rapid heart rates.\u00a0\u00a0It may be helpful to have your doctor put you on a heart monitor so that the actual rates can be measured - it will give you both a better idea of what may be going on!",
+            "id": "5088768",
+            "rank": 3
+        },
+        {
+            "answer": "Thanks for the reply.Should I be concerned about the lymphocytes count (it is 23; recommended is 25-41); everything else is normal (CBC/realine/EKG and other metabolic blood tests)",
+            "id": "5089314",
+            "rank": 1
+        },
+        {
+            "answer": "Also wanted to know if stress can contribute to reduced lymphocytes count ?Thanks",
+            "id": "5089340",
+            "rank": 1
+        }
+    ]
+}

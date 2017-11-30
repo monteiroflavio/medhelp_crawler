@@ -90,9 +90,9 @@ class MedHelpCrawler:
                     souped_page = self.remove_br_tags(bs(web_page, 'html.parser'))
                     for answer in souped_page.find('div', {'id' : 'post_answer_body'}).findAll('div', {'class' : 'post_entry_right'}):
                         post_id = answer.find('div', {'class' : 'post_message'})['data-post_id']
-                        answers.append(Answer(answer.find('a')['id']
-                            , answer.find('a')['href']
-                            , self.concatenate_string_array(self.convert_a_tags(answer.find('div', {'class', 'post_message'})).contents)
+                        answers.append(Answer(#answer.find('a')['id']
+                            #, answer.find('a')['href']
+                            self.concatenate_string_array(self.convert_a_tags(answer.find('div', {'class', 'post_message'})).contents)
                             , answer.find('time', {'class', 'mh_timestamp'})['data-timestamp']
                             , int(answer.find('span', {'id' : 'user_rating_count_Post_'+post_id}).contents[0])
                             , post_id))
@@ -108,8 +108,8 @@ class MedHelpCrawler:
         else:
             souped_page = self.remove_br_tags(bs(web_page, 'html.parser'))
             return Question(''.join(x.strip() for x in souped_page.find('div', {'class': 'question_title hn_16b'}).contents)
-                , souped_page.find('div', {'class', 'subj_user os_12'}).find('a')['id']
-    	        , souped_page.find('div', {'class', 'subj_user os_12'}).find('a')['href']
+                #, souped_page.find('div', {'class', 'subj_user os_12'}).find('a')['id']
+    	        #, souped_page.find('div', {'class', 'subj_user os_12'}).find('a')['href']
     	        , self.concatenate_string_array(self.convert_a_tags(souped_page.find('div', {'class', 'post_message'})).contents)
 	        , answers
 	        , souped_page.find('time', {'class', 'mh_timestamp'})['data-timestamp']

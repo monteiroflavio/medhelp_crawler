@@ -1,0 +1,32 @@
+{
+    "answers": [
+        {
+            "answer": "First off, you should make an appointment with a cardiologist. Primary care doctors are capable of taking care of heart failure, but I would recommend at least establishing care with a cardiologist since it is a new diagnosis.With regards to the medications:There are a few beta blockers with evidence in heart failure -- they are carvedilol, metoprolol XL, and bisoprolol (not really used in the US). Atenolol does not have any data to support its use in heart failure, so I would recommend a different agent (one of the above). Which one to choose depends on your blood pressure and ability to take twice daily dosing vs once daily.Chlorthalidone is a perfectly fine diuretic, if you have blood pressure room to tolerate it. If you are having trouble with low BP or are holding onto extra fluid, then a change to a loop diuretic (furosemide, torsemide, bumetanide) might be warranted, but chlorthalidone should be okay otherwise.There is data for both ACE inhibitors and ARBs in heart failure. Losartan is a reasonable choice, as it does have good data to support its use in heart failure. If you haven't tolerated an ACE in the past, then I probably wouldn't try it again, as you will likely still have cough.You don't need a blood thinner. You can take a baby Aspirin if you like, however, it sounds like you likely don't have heart failure secondary to ischemic heart disease (ie blockages in the heart -- the normal stress test argues against this). The same is true for statins -- if your cholesterol is okay and you don't have evidence of coronary disease or other risk factors (diabetes, stroke, etc) then you don't need a statin.Vasodilators are sometimes used on top of ACEI/ARB and beta blocker but aren't always indicated. You should start with these medications, and if your blood pressure is too high despite maximum doses on those, or if your renal function can't tolerate the ARB, or if you are having refractory heart failure symptoms, then your doctor might consider adding a vasodilator.Digoxin doesn't improve mortality in heart failure, though it has been shown to decrease symptoms and hospitalizations. Since you were just diagnosed, there is no reason to start this now. If you continue to have problems after being on an optimal heart failure regimen, then it might be considered.",
+            "post_id": "7594732",
+            "timestamp": "1326741477",
+            "votes": 2
+        },
+        {
+            "answer": "Thank you so much for your reply!Unfortunately\u2014at least for awhile\u2014seeing a cardiologist is not an option. That's why I want to be armed with as much information as I can when I see my regular doctor.For CHF patients, what would be the optimal daily dosages of carvedilol & losartan?Also, should I begin the carvedilol gradually?And should I taper off of the atenolol/Tenoretic, or can I make the switch immediately?I appreciate your help!",
+            "post_id": "7595413",
+            "timestamp": "1326752915",
+            "votes": 0
+        },
+        {
+            "answer": "I forgot to mention: When I was admitted to the hospital, my blood pressure was 195/99 with a heart rate of 98.I've been checking my blood pressure three times daily since I started taking the losartan and on average it's around 125/75, with an average heart rate of 80.",
+            "post_id": "7595457",
+            "timestamp": "1326754104",
+            "votes": 0
+        },
+        {
+            "answer": "The optimal doses depend on what you BP and heart rate will tolerate, so I can't really comment on that at this point. The carvedilol is usually started at a low dose and titrated up every week or 2 weeks. Losartan can be started at whatever dose seems reasonable for your blood pressure.No need to taper, you can just make the switch. The primary care doctor that you see will likely know all of this.",
+            "post_id": "7595988",
+            "timestamp": "1326765297",
+            "votes": 0
+        }
+    ],
+    "post_id": "7593199",
+    "question": "I was recently diagnosed with congestive heart failure after a brief stay in the hospital (admitted from the ER with chest pains).I was given several tests, including an echocardiogram and a nuclear stress test.Here are some of the results from my records:Ejection Fraction: 39% With Moderate Global LV Wall HypokinesisNormal Stress Myocardial Perfusion ImagingDilated LVNegative Serial Cardiac EnzymesNo Evidence Of Perfusion DeficitsNormal EKG With Normal Sinus RhythmD-Dimer Less Than 150Troponin First Set 0.015Albumin: 3.2 g/dL (Low)Calcium: 8.0 mg/dL (Low)Cholesterol: mg/dL 160HDL Cholesterol: 35 mg/dL (Low)When I was admitted to the hospital, I was already taking Metformin & Glipizide (type 2 diabetes), and I was also on Tenoretic & Verapamil (hypertension). They switched out the Verapamil for Cozaar. I'm now taking:Metformin: 1000mg Twice DailyGlipizide: 10mg Twice DailyTenoretic: 50-25mg Once DailyCozaar: 50mg Once DailyI'm going to see my regular doctor next Friday, and I wanted to know what medications/dosages I should suggest.Tenoretic: Is the Atenolol suitable, or should I request another beta blocker? Likewise, is there a better diuretic than Chlortalidone? I keep reading about Coreg and & Demadex. Are these better options?Cozaar: They initially wanted to put me on Lisinopril, but I was on that previously and I had a terrible, nagging cough the entire time. I've read that ACE Inhibitors are preferable to ARBs, though, when it comes to CHF. Should I try another ACE, or would all of them be likely to cause a cough since the Lisinopril did? Or is the Cozaar good enough? (Some places even suggest taking an ACE along with an ARB...is that a good idea?)Blood Thinners: Should I be taking one? (And is low-dose aspirin safe? There seems to be conflicting thoughts on this for people with CHF.)Supplements: Should I be taking any?What about statins? Vasodilators? Digoxin?I apologize for the long post. I appreciate your time & help.",
+    "timestamp": "1326696712",
+    "title": "CHF & Medications"
+}

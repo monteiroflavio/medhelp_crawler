@@ -1,0 +1,20 @@
+{
+    "answers": [
+        {
+            "answer": "Interesting...how does the download work, do you have a usb cable or something?Are you downloading in excel format, or does it download as a csv file?",
+            "post_id": "5991312",
+            "timestamp": "1280955098",
+            "votes": 0
+        },
+        {
+            "answer": "I use a USB cable.\u00a0\u00a0It downloads as a .xls file.",
+            "post_id": "5991548",
+            "timestamp": "1280959344",
+            "votes": 0
+        }
+    ],
+    "post_id": "5991286",
+    "question": "My glucometer allows me to download the past 500 glucose tests I've taken to an excel document.\u00a0\u00a0Can I, now or in future, import that information directly to my diabetes tracker so I can have a broader data stream to better understand my stats?",
+    "timestamp": "1280954640",
+    "title": "Diabetes Tracker Info Import"
+}

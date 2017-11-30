@@ -1,0 +1,32 @@
+{
+    "answers": [
+        {
+            "answer": "Hello!\u00a0\u00a0I'm not a medical professional, just the parent of a kid with diabetes, and your question is very 'medical', so I hope I do a decent job of replying.The thing to remember about blood glucose is that everyone's body reacts differently.\u00a0\u00a0It is possible to have a continued rise on glucose like you describe, but it's not very common.\u00a0\u00a0Again, I'm not a medical professional, but I think the way it works is that your body is reacting to the surge of glucose and produces insulin.\u00a0\u00a0It may produce too much insulin to cover that glucose, which may be causing your liver to dump out even more glucose to cover it.\u00a0\u00a0You don't talk about your symptoms at all, so you don't say what caused you to get the GTT done.\u00a0\u00a0Are you having symptoms of low blood sugars?Again, this is just a guess.\u00a0\u00a0Please talk to your doctor about your questions as well.",
+            "post_id": "2432292",
+            "timestamp": "1189659600",
+            "votes": 0
+        },
+        {
+            "answer": "Thank you for your comment.I failed to mention that I am the one (a Medical Technologist) who is analyzing these\u00a0\u00a0patient samples. Although I have several texts and researched anumber of articles, I am yet to come across a publication that writes about thisin detail with referenced illustrations and variation in trend compared todiffering conditions. All or, if not, most texts and publications only mention/listreference ranges - this information I have. What I don't have is a detailedexplanation (technical information) depicting these graphs.",
+            "post_id": "2436400",
+            "timestamp": "1189659600",
+            "votes": 0
+        },
+        {
+            "answer": "Ah, that explains the detail in your question!One of the problems with coming up with a standard graph to publish is that blood sugars are so varying and everyone reacts differently.\u00a0\u00a0There are a few standard things to check for, but it is impossible to say that everyone's reaction to glucose or activity is the same.\u00a0\u00a0My child can consume a certain food and go sky high, and a friend's child can eat the same food and go low.\u00a0\u00a0If you can figure out how to predict these things, the companies working on the Continuous Glucose Monitor want to talk to you!",
+            "post_id": "2436401",
+            "timestamp": "1189659600",
+            "votes": 0
+        },
+        {
+            "answer": "In the medical field, science, and other fields/ areas, published informationis subjected to change and therefore may not be refered to as \"standard\".Very good examples when dealing with laboratory tests are\u00a0\u00a0\" reference ranges \"\u00a0\u00a0 -\u00a0\u00a0as opposed to being called \"normal ranges\" (which should be avoided).Therefore, I would not refer to these graphs as \"standard\" but \"general guidelines\" if you will. These graphs can be documented as general illustrations with explanations, limitations / exceptions, and documented examples (experimental or case studies).",
+            "post_id": "2436407",
+            "timestamp": "1189746000",
+            "votes": 0
+        }
+    ],
+    "post_id": "2432291",
+    "question": "Upon performing the 2hr OGTT (using 75g drink) or the 3hr OGTT (using 100g drink), on several occasions, I have experienced serum glucose values measured at 1hr lower than those of the 2hr glucose values (Fasting glucose within reference range and all samples collected, processed, and separated within appropriate timing).For individuals with \"mild\" diabetes and suspected gestational diabetes, how likely it is for glucose measurements to show this trend? What other conditions can this trend be seen in? Can glucose values still be on the rise up to 2hrs in non-diabetic individuals?Previously, I came across a glucose tolerance graph illustrating glucose values (mg/dL) plotted against time (in minutes)for several conditions. Most of these graphs depict a glucose peak value at 30 to 60 minutes with a decrease in values when approaching 90 to 120 minutes.Please provide an explanation and/or reference source about the various results one can expect from the glucose tolerance test versus time in individuals.",
+    "timestamp": "1189573200",
+    "title": "2hr & 3hr OGTT - blood glucose values (mg/dL) vs time (min)"
+}

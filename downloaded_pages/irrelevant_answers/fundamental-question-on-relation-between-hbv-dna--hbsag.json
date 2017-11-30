@@ -1,0 +1,128 @@
+{
+    "answers": [
+        {
+            "answer": "They both come from the cccdna.From what I understand (i might be mistaken)Hbv dna does not intergrate into the cell hence hbsag does intergrate into the liver cells.Hence when its outside the cell the immune system can deal with all particle production. But when its integrated into the cell its far more difficult.Hep b is uncredibly complex",
+            "post_id": "13573021",
+            "timestamp": "1451559189",
+            "votes": 0
+        },
+        {
+            "answer": "If you are chronic carrier the virus keeps multiplying even if the DNA test shows as \"UNDETECTED\"\"Undetected\" simply means that the value was lower then the value which can be detectable by the given test, but NOT that the virus is not present or not multiplying.",
+            "post_id": "13574449",
+            "timestamp": "1451617267",
+            "votes": 0
+        },
+        {
+            "answer": "If you have cccDNA in the nucleus of an infected cell, then m(messener)RNAs all the viral proteins (HBsAg, HBeAg, HBcAg, X protein) and pgRNA are constantly transcribed using cccDNA as the template. The viral proteins(including pgRNA) mRNAs move outside the nucleus into the cytoplasm to be translated into the actual proteins:gene -transcription-->mRNA- translation --> protein.However the pgRNA is reverse transcribed to HBV DNA (inside the capsid made up of core(HBcAg) protein. The NA antivirals inhibit reverse transcription of pgRNA, therefore no HBVDNA being formed inside the core protein capsid, therefore no HBVDNA made and released into the blood. On the other hand, the translation of viral proteins mRNA carry on as usual, making a lot HBsAg protein - these are then released into the blood as SVP(sub viral particle) and as the coat of core capsids with no HBVDNA inside.So the reasoning is that under NA treatment, no(or minimal) HBVDNA will be detected, but HBsAg will still be detected , in the blood, therefore qHBsAg is a surrogate marker for cccDNA quantity.Under natural immune control and no treatment, both HBsAg and HBVDNA should be good indicators of cccDNA quantity.",
+            "post_id": "13574532",
+            "timestamp": "1451622775",
+            "votes": 0
+        },
+        {
+            "answer": "Why do some chronic patients spontaniously svr?Also i was wondering in terms of geno types lets say a person has hbsab from a resolved acute infection and they were geno type A and then they were exposed to hbv from another person who is geno type D. Would they still be immune?",
+            "post_id": "13574749",
+            "timestamp": "1451637962",
+            "votes": 0
+        },
+        {
+            "answer": "Spelling mistake meant to write *incredibly complex.",
+            "post_id": "13574752",
+            "timestamp": "1451638088",
+            "votes": 0
+        },
+        {
+            "answer": "I think \"naturally\" may be a better term than \"spontaneously\". Things seem to happen \"spontaneously\" because\u00a0\u00a0things are not monitored closely. As to why \"naturally\" svr, you will have to be more specific.I don't know the answer to your second question. My guess is that\u00a0\u00a0you will still be immune because:1. Different genotypes does not mean the respective HBsAg\u00a0\u00a0are that much different;2. there is a concept calls antibody affinity.",
+            "post_id": "13574844",
+            "timestamp": "1451645959",
+            "votes": 0
+        },
+        {
+            "answer": "Being more specifically someone being infected from birth and 30 to 40 years later have hbsag and produce hbsab.How and why does the above circumstance arise on occassion?",
+            "post_id": "13574931",
+            "timestamp": "1451654894",
+            "votes": 0
+        },
+        {
+            "answer": "It is my opinion that for those infected at birth, majority will naturally e-seroconvert and become inactive carriers. With age, some of them will clear their HBsAg.Why?\u00a0\u00a0The standard reasoning is that the course of HBV infection is determined by interaction between host and viral factors. Favourable host factors include being female, have the right Interferon related genes and the right HLA genes. Favourable viral factor is genotype A or B.",
+            "post_id": "13574950",
+            "timestamp": "1451656005",
+            "votes": 0
+        },
+        {
+            "answer": "Sorte what do you mean?",
+            "post_id": "13575678",
+            "timestamp": "1451684159",
+            "votes": 0
+        },
+        {
+            "answer": "correct! the value is lower means the rate of multiplication is less which intern means the quantity of virus should eventually come down.However,the way the results are,there seems to be no relation between the 2 metrics",
+            "post_id": "13576386",
+            "timestamp": "1451712136",
+            "votes": 0
+        },
+        {
+            "answer": "if thats the case then the value of HBV DNA is immaterial as the virus continues to replicate.replicate. Isnt it the virus that causes the damage and not the DNA?so why do doctors check for HBV DNA count",
+            "post_id": "13576389",
+            "timestamp": "1451712297",
+            "votes": 0
+        },
+        {
+            "answer": "It is not the virus that causes damage, it is our own immune system that causes the damage when it tries to attack and kill infected liver cells.Virus continues to replicate if cccDNA continues to exist inside infected liver cells. Antiviral drugs inhibits the formation of hbvdna from cccDNA, but do not affect cccDNA. Yes, continual replication from cccDNA and continual inhibition to form new virions by antiviral drugs.Hbvdna is never released directly into the blood from infected liver cells. HBvdna is always enclosed inside the new virions. When we measure hbvdna in the blood, we actually measure the hbvdna inside the virion (the capsid of the virion is lysed first to extract the hbvdna inside, which is then amplified and measured by PCR).Checking for hbvdna count is to check how many virions are produced (how active the disease).It seems outside Immune Tolerance, a high amount of virions (hbdna) in the blood will lead to inflammation and immune reaction - these constant inflammations and immune reactions(that do not lead to a complete clearance of the infection) cause liver cells damage and fibrosis over a long period of time.",
+            "post_id": "13576426",
+            "timestamp": "1451713801",
+            "votes": 0
+        },
+        {
+            "answer": "Then how comes some people at the \"inactive stage\" still end up with hcc? Or occult hepatitis still causes hcc?",
+            "post_id": "13576644",
+            "timestamp": "1451722151",
+            "votes": 0
+        },
+        {
+            "answer": "You don't have to have HBV to have HCC. Very broadly speaking, cancer is caused by an accumulation of genetic mutations/changes. It is a multi-step process. Viral infection can cause damage to the genome, just like smoking and radiation and host of other factors. Damage can also be caused by mutation in our genome during cell divisions. There are also oncogenes and gene like BRAC1, BRAC2, P53 etc.In the case of HCC, hbv infection and cirrhosis are important risk factors.Many of us will die of cancer, the best we can do is to minimize the risks.",
+            "post_id": "13576666",
+            "timestamp": "1451723149",
+            "votes": 0
+        },
+        {
+            "answer": "But if the immune system resolves either an acute or chronic infection it dramatically reduces the chances of hcc",
+            "post_id": "13576906",
+            "timestamp": "1451737240",
+            "votes": 0
+        },
+        {
+            "answer": "Yes, reduce but not eliminate. HCC is curable if detected early and resection is possible because liver is in good condition (not cirrhotic).",
+            "post_id": "13576923",
+            "timestamp": "1451737561",
+            "votes": 0
+        },
+        {
+            "answer": "But if its resolved its highly unlikely it will develop to hcc.Plus alot of hbvers end up becoming pretty knowledgeable in terms of their health and with close monitoring identify\u00a0\u00a0usually identify other red flags that may occur early. I guess i would call this a small mercy",
+            "post_id": "13577076",
+            "timestamp": "1451745447",
+            "votes": 0
+        },
+        {
+            "answer": "to always keep in mind, the highest risk for hcc comes from diabetes and also sugar imbalances like insuline resistance/fatty liver/being overweight,ogm/processed foodsthe risk of hcc with diabetes is 31% if i remember correct, hbv is nothing compared to it, also hcv has a much higher riski think that with all the coffee, vit d, healthy food and antivirals we take we may end up safer than supposed healthy population.i ve noticed this all around me, people never getting sick and with little care for food or regular testing is dying earlier despite they never got sick...in the end being an hbv carrier is something i am happy with because i am so aware of quality in nutrition or regular testing to stay healthy",
+            "post_id": "13577092",
+            "timestamp": "1451746139",
+            "votes": 0
+        },
+        {
+            "answer": "I too feel there is a benefit to us knowing our status, as we can be proactive and monitor, rather than someone who does not know of HBV infection until it's too late.I recently met a gentleman in Costco shopping.\u00a0\u00a0We started talking about the holidays and he said he needed to watch what he ate because he had diabetes and 6 months ago had a liver transplant for primary HCC.\u00a0\u00a0I told him about my HBV status.\u00a0\u00a0He said he never had HBV or HCV, but did have a fatty liver.\u00a0\u00a0For him, it was obvious the HCC was due to his obese weight (thankfully now trying to lose weight), poor eating habits, diabetes and fatty liver.\u00a0\u00a0The fatty liver then caused fibrosis, cirrhosis, HCC.My main take away from him was to eat healthy, maintain a healthy weight and exercise.\u00a0\u00a0It was also a great reminder to me there are many factors to getting HCC, and as long as we follow healthy practices we benefit.\u00a0\u00a0The majority of us will not get HCC, even with chronic HBV, and if we can be vigilant this will help us not be one of the statistics of HCC.",
+            "post_id": "13577146",
+            "timestamp": "1451749191",
+            "votes": 0
+        },
+        {
+            "answer": "My comment that \"many of us will die of cancer\" refers to cancer of one type or another, not just HCC. Similarly, all of us will die, with or without HBV.Happy new year to us all - we are still alive.",
+            "post_id": "13577199",
+            "timestamp": "1451750758",
+            "votes": 0
+        }
+    ],
+    "post_id": "13572988",
+    "question": "My report in iu/mlHBV dna: sep-<20, oct-not detected, nov-<20,\u00a0\u00a0\u00a0\u00a0dec<20HBSag:\u00a0\u00a0\u00a0\u00a0sep-6105, oct-11736,\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0\u00a0 nov-12686If reduction in HBV DNA means that the virus is not multiplying then technically the virus count should reduce as it should die after its life cycle.Then why is it that the HBV DNA is undetectable but stll hbsag is increasing.",
+    "timestamp": "1451555678",
+    "title": "Fundamental question on relation between HBV DNA & HBSag"
+}

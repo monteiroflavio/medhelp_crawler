@@ -1,0 +1,26 @@
+{
+    "answers": [
+        {
+            "answer": "Hi Irene,There is an algorhythm used to determine risk / benefits of coumadin vs. aspirin.\u00a0\u00a0If your age is great than 60 and you have atrial fibrillation, you should be on coumadin unless there are other contraindicatins.High risk features include:prior stroke or thromboembolism,age >65 years,hypertension,diabetes mellitus,coronary arterial disease,moderate to severe left ventricular dysfunction by echocardiographyYou don't always have to have blood drawn to check your INR.\u00a0\u00a0There is a finger stick tests to check your INR, very similar to what diabetics use to check there blood sugar levels.I hope this helps and thanks for posting.",
+            "post_id": "1564186",
+            "timestamp": "1102226400",
+            "votes": 0
+        },
+        {
+            "answer": "Recently, researchers from the Washington University of Medicine in St. Louis have devised a simple model to help doctors and patients decide whether anticoagulation therapy is warranted for people who have afib. The model - called the CHADS model - assigns a score from 0 to 6, based on the patient's age and other medical conditions. You get 2 points if you've had a prior stroke, 1 point if you have congestive heart failure, 1 point for high blood pressure, 1 point for diabetes, and one point if you are age 75 or older.Those with scores of 0 don't require coumadin, an aspirin a day will do. Those with 2 or more points should definitely be on coumadin. One point is iffy. You can read more about this at the following URL: http://heartdisease.about.com/library/weekly/aa080601a.htm . They discuss the odds of getting a stroke when you have afib and depending on your score and treatment(w/aspirin, w/coumadin, etc.). For example, with a score of two and taking nothing, you have a 4% chance of getting a stroke in one year's time (this translates to about a 34% chance over ten years, 55% chance over 20 years). The coumadin reduces that to about a third of those values. It's likely your cardiologist has based his recommendation on a similar algorhythm. So you see, you take a significant risk by not following his recommendation if you have 2 or more points.Regards,Tony",
+            "post_id": "1587694",
+            "timestamp": "1102226400",
+            "votes": 0
+        },
+        {
+            "answer": "I wonder if the doc. would have a moment to indicate whether his indication is based on the same model that VA-Tony refers to. Thanks a bunch.",
+            "post_id": "1587709",
+            "timestamp": "1102312800",
+            "votes": 0
+        }
+    ],
+    "post_id": "1564185",
+    "question": "I am pacemaker-dependent following AV-node ablation, which has been on the whole successful, although I have very occasional long periods of AF (c24hours) only two recorded on my pacemaker in the last few months.\u00a0\u00a0This happens very infrequently, but my cardiologist feels that I should now start on Warfarin because of these episodes. This will be a problem for me because I have very inaccessible veins, so the frequent blood tests may well be difficult for all concerned. Do you feel that isolated episodes such as these are enough to justify starting on Warfarin, or should aspirin be sufficient? Thanks very much.",
+    "timestamp": "1102226400",
+    "title": "Warfarin or aspirin"
+}

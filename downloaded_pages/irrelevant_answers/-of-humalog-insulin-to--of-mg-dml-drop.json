@@ -1,0 +1,38 @@
+{
+    "answers": [
+        {
+            "answer": "Dear Tony,I wish I could answer your question but as a lay person this one has me stumped.I checked my personal resources and was not able to find anything on this issue. Keep looking for follow up posts and maybe we will get an answer.Sorry,dm",
+            "post_id": "2429244",
+            "timestamp": "1074578400",
+            "votes": 0
+        },
+        {
+            "answer": "Okay - found this one out kind of.\u00a0\u00a0But hopefully someone can verify it:If you use Regular insulin: If your total daily dose of insulin were 30, then 1500 divided by 30 = 50, meaning that 1 unit of Regular insulin would drop your blood glucose approximately 50 mg/dl.If you use Humalog (and likely the same would apply for Novolog): If your total daily dose of insulin were 30, then 1800 divided by 30 = 60, meaning that 1 unit of Humalog or Novolog would drop your blood glucose approximately 60 mg/dl.Not that I would use this sensitivity calculation to get the amount of insulin I would need to lower my BG (fear of over-bolus because I have insulin still in me).\u00a0\u00a0My pump does that calculation and so far has kept me in the mid-80s to lmid-90s reliably.\u00a0\u00a0Just wanted to know what the general ratio was out of curiosity.",
+            "post_id": "2433174",
+            "timestamp": "1074578400",
+            "votes": 0
+        },
+        {
+            "answer": "The insulin:blood-sugar-drop ratio you shared is a good rule of thumb.\u00a0\u00a0You mentioned that your pump \"does this\" automatically, and usually that's because we (or our CDE) have programmed our pump with our particular ratio.The books I've seen on Pumping Insulin provide some starting point guides on 2 ratios.\u00a0\u00a0The first is the one you mention, and the second is the computation for how many carbos one unit will cover.The specific ratios for each of us is best computed with the help of a CDE ... not because the math is hard (it isn't) but because of the specifics that can play a role in why our ratios would be higher/lower and what factors might suggest we need to change our ratios over time.",
+            "post_id": "2433176",
+            "timestamp": "1074751200",
+            "votes": 0
+        },
+        {
+            "answer": "By the above formula, taking one unit of Humalog would drop my bloodsugar by 60 mg/dl. This is way too high. 10 units would put me at a drop of 600. I've take as much as 10 units of humalog with a bloodsugar drop of maybe 40-50 mg/dl.Am I reading this correctly?",
+            "post_id": "4775891",
+            "timestamp": "1250478234",
+            "votes": 0
+        },
+        {
+            "answer": "I suggest the books Using Insulin or Thinking like a pancreas both of which give formulas to compute correction factors. However, the formulas are guidelines and as such need to be carefully verified by using less than you think is needed and seeing what the results are. They also give you ways to compute the \"insulin still on board\" which must be taken into account to avoid \"stacking\" or taking too much insulin too close together. Bottom line is that we are all different and we can, with the help of a CDE find out what works for us and then verify its accuracy.",
+            "post_id": "4778076",
+            "timestamp": "1250536611",
+            "votes": 0
+        }
+    ],
+    "post_id": "2429243",
+    "question": "I know this is different for everyone - but generally, what is the ratio for the # of mg/dml units dropped by 1 unit of insulin.\u00a0\u00a0Like Humalog U100 R.\u00a0\u00a0Does anyone know?\u00a0\u00a0Lilly (the mfg. of Humalog) said that they didn't have those numbers (I didn't believe that).\u00a0\u00a0Just curious.\u00a0\u00a0I asked a Diabetes Trainers from my hospital and she didn't have an idea either.:^(",
+    "timestamp": "1074578400",
+    "title": "# of Humalog Insulin to # of mg/dml drop?"
+}

@@ -1,8 +1,6 @@
 import os
 import json
 import random
-#import matplotlib.pyplot as plt
-#import numpy as np
 from medhelp_crawler import MedHelpCrawler
 from question import Question
 import time
@@ -145,33 +143,20 @@ def download_pages():
         except ConnectionError:
             print('an error occurred. restarting for remaining links')
 
-def remove_single_answer_questions():
-    if not os.path.exists(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'single_answer')):
-        os.makedirs(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'single_answer'))
-    for filename in os.listdir('preeclampsia'):
-        if not os.path.isdir(os.path.join('preeclampsia', filename)):
-            question = json.load(open(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), 'r'))
+def remove_single_answer_questions(directory):
+    if not os.path.exists(os.path.join(os.path.join(os.getcwd(), directory), 'single_answer')):
+        os.makedirs(os.path.join(os.path.join(os.getcwd(), directory), 'single_answer'))
+    for filename in os.listdir(directory):
+        if not os.path.isdir(os.path.join(directory, filename)):
+            question = json.load(open(os.path.join(os.path.join(os.getcwd(), directory), filename), 'r'))
             if len(question['answers']) <= 1:
-                os.rename(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), filename), os.path.join(os.path.join(os.path.join(os.getcwd(), 'preeclampsia'), 'single_answer'), filename))
+                os.rename(os.path.join(os.path.join(os.getcwd(), directory), filename), os.path.join(os.path.join(os.path.join(os.getcwd(), directory), 'single_answer'), filename))
 
-#count = 0
-#for answer in json.load(open('What-cycle-of-Clomid-are-you-on-any-side-effects.json', 'r'))['answers']:
-#    count+=1
-#print(count)
+#download_links('diabetes')
+#download_pages()
 
-#save_question_page('/posts/Diabetes---Type-1/Do-you-have-questions-about-diabetes--/show/2987819')
-#save_question_pages('/forums/Diabetes---Gestational/show/1950')
-
-download_links('diabetes')
-#download_preeclampsia_pages()
-
-#date_set = check_latest_question()
+#date_set = check_pages_time_range('downloaded_pages')
 #print('latest :'+time.ctime(date_set['latest_timestamp']))
 #print('newest :'+time.ctime(date_set['newest_timestamp']))
 
-#remove_single_answer_questions()
-#remove_not_related_questions()
-#remove_irrelevant_answers()
-
-#for timestamp in get_dates_list():
-#    print(time.ctime(timestamp))
+#remove_single_answer_questions('downloaded_pages')
